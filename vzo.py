@@ -19,8 +19,8 @@ COLOR_RED = (252, 208, 205)
 GREEN_EMOJI = u'\U0001F7E2'
 RED_EMOJI = u'\U0001F534'
 
-TELEGRAM_CHAT_ID = 'xy'
-TELEGRAM_API_TOKEN = ''
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+TELEGRAM_API_TOKEN = os.getenv("TELEGRAM_API_TOKEN")
 
 # get Tesseract at https://github.com/UB-Mannheim/tesseract/wiki
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
